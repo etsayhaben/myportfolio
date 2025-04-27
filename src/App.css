@@ -1,0 +1,261 @@
+
+/* Sidebar container */
+.links {
+  display: flex;
+  flex-direction: column;
+
+  /* Keeping the original position */
+  padding: 20px; /* Padding around the buttons */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+/* Button styles */
+.introduction button {
+  color: white;
+  background-color: transparent;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 2px 0; /* Vertical margin for spacing */
+  padding: 10px 20px; /* Padding for buttons */
+  border: none; /* Remove default border */
+  border-right: 2px solid rgb(39, 231, 0);
+  border-left: 2px solid rgb(0, 255, 13);
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover */
+}
+
+/* Button hover effect */
+.introduction button:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Optional: Add a subtle animation for the buttons */
+.introduction button {
+  animation: fadeIn 0.5s ease; /* Fade-in effect for buttons */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px); /* Start slightly lower */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* End at original position */
+  }
+}
+.introduction a
+{
+  border: none;
+}
+
+logo {
+  border-radius: 70%;
+}
+.skills
+{
+  width:100%;
+  height:662px;
+}
+
+
+.projects
+{
+  width:100%;
+
+  margin-top: 0px;
+  height: 680px;
+}
+.contactme
+{
+  border:2px solid green;
+  width:100%;
+  height: 100px;
+}
+logo img
+{
+  width:80px;
+  height:80px;
+  margin-left: 20px;
+  border-radius: 30%;
+}
+
+
+/* App.css */
+
+/* App.css */
+
+.body
+{
+  background-image: url('../public/backgroundimage.jpg'); 
+  background-size:auto;
+}
+.body img
+{
+width: 100%; 
+height: 100%;
+background-repeat: inherit;
+
+}
+.introduction {
+  position: absolute;
+  top:10px;
+  left:240px;
+  width:50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+}
+
+.homepage {
+  margin-right: 10px;
+  background: linear-gradient(135deg, #00b4d8, #0077b6);  /* A gradient background */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: white;
+  max-width: 500px;
+  width: 100%;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+li {
+  margin: 10px 0;
+  position: relative;
+  padding-left: 20px;
+}
+
+li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #ffd700;
+  font-size: 1.5rem;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .name {
+      font-size: 2rem;
+  }
+
+  ul {
+      font-size: 1rem;
+  }
+}
+
+
+
+
+.introduction .links
+{
+  display:flex;
+  flex-direction: column;
+  
+}
+.introduction .links button
+{
+  color:white;
+  font-size: larger;
+  font-style: italic;
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+  .introduction{
+    position:absolute;
+    left:120px;
+    width:500px;
+    margin-left:0px;
+
+  }
+
+  .body
+  {
+    margin-top:0px;
+    margin-bottom: 0px;
+    padding:0px;
+    background-image: url("../public/971.jpg");
+  }
+  .introduction .links{
+    display:flex;
+    flex-direction: column;
+  
+  }
+
+  /* Your CSS properties here */
+}
+
+
+
+/* Responsive styles for mobile */
+@media (max-width: 600px) {
+  .introduction {
+    position: absolute;
+    left: 80px;
+    margin:0px;
+    text-align: center;
+    height: auto;;
+    width: 300px;
+      padding: 0px; /* Reduce padding for smaller screens */
+  }
+  .introduction .links
+{
+  display: flex;
+  flex-direction: column;
+ 
+
+}
+
+
+.body
+{
+  width:900px;
+}
+.body img
+{
+width: 100%; 
+height: 100%;
+}
+
+
+
+
+  .introduction h1 {
+      font-size: 1.5rem; /* Smaller font size for mobile */
+      margin: 5px 0; /* Reduce margin for mobile */
+  }
+}
+
+

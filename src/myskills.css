@@ -1,0 +1,191 @@
+.myskills-container {
+  background-image: url('../public/backgroundimage.jpg'); 
+  max-width: 100%;
+  background-color: rgb(255, 255, 255);
+
+  padding: 40px;
+  color: #000000; /* Set text color to white */
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.section-title {
+
+  font-size: 4.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-transform:capitalize;
+  color: #000000; /* Highlight title color */
+}
+
+.skills-container {
+
+  position: relative;
+  width:50%;
+ left:300px;
+  height: 500px; /* Set a height for the container */
+}
+
+.skill-card {
+  position: absolute;
+  background-color:wheat;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow for card effect */
+  width: 250px; /* Fixed width for the card */
+  transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.skill-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.skill-card h2 {
+  font-size: 1.5rem; /* Title size */
+  margin-bottom: 10px; /* Space between title and details */
+  color: #000000; /* Title color */
+  text-align: center; /* Center title */
+  font-weight: bold; /* Bold title */
+}
+
+.skill-card ul {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  color: #000000; /* Paragraph color */
+  text-align: left; /* Align text to the left */
+  width: 100%; /* Full width for the list */
+  font-size: larger;
+}
+
+.skill-card li {
+  font-size: 1.1rem; /* List item size */
+  font-weight:100;
+  margin: 5px 0; /* Space between list items */
+  padding-left: 10px; /* Indent list items */
+  position: relative; /* Position for custom bullet */
+}
+
+.skill-card li::before {
+  content: "•"; /* Custom bullet */
+  color: #000000; /* Bullet color */
+  position: absolute; /* Position bullet */
+  left: 0; /* Align bullet to the left */
+}
+
+.skill-card-0 {
+  top: 20px;
+  left: 20px;
+}
+
+.skill-card-1 {
+  top: 20px;
+  left: 330px;
+}
+
+.skill-card-2 {
+  bottom: 5px;
+  left: 150px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .section-title {
+    font-size: 1.0rem;
+  }
+  .myskills-container 
+  {
+    padding:54px;
+    height: 800px;
+    
+  }
+
+  .skills-container {
+    height: auto; /* Allow height to adjust on smaller screens */
+    position: relative;
+    left:0px;
+  }
+
+  .skill-card {
+    padding: 15px;
+    min-height: 200px; /* Adjust minimum height for smaller screens */
+    width: 60%; /* Responsive width */
+   
+  }
+
+  .skill-card-0 {
+    top: 210px;
+    left: 40%;
+  }
+
+  .skill-card-1 {
+    top: 0px;
+    left: 0%;
+  }
+
+  .skill-card-2 {
+    top: 430px;
+    left: 5%;
+    
+  }
+  .myskills-container .section-title
+  {
+  text-align: left;
+  text-transform: capitalize;
+  font-size: 1.5 rem;
+  font-family: 'Courier New', Courier, monospace;
+  }
+}
+
+
+/* Responsive Design */
+@media (min-width: 600px) and (max-width: 780px) {
+  .section-title {
+    font-size: 1rem;
+  }
+
+  .skills-container {
+    height: auto; /* Allow height to adjust on smaller screens */
+    position: relative;
+    left: 20px;
+  }
+
+  .skill-card {
+    border:2px solid white;
+    padding: 15px;
+    min-height: 200px; /* Adjust minimum height for smaller screens */
+    width: 60%; /* Responsive width */
+   
+  }
+
+  .skill-card-0 {
+    top: 210px;
+    left: 40%;
+  }
+
+  .skill-card-1 {
+    top: 0px;
+    left: 0%;
+  }
+
+  .skill-card-2 {
+    top: 400px;
+    left: 5%;
+  }
+
+ 
+  .myskills-container .section-title
+  {
+  text-align: left;
+  text-transform: capitalize;
+  font-size: 1.5 rem;
+  font-family: 'Courier New', Courier, monospace;
+  }
+}
+
+
+
